@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Tom and Jerry Name Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            margin:0;
+            padding: 0;
+            background-color: azure;
+            text-align: center;
+        }
+
+        .cards {
+            /* display: flex; */
+            width: 100%;
+            margin: 0;
+            /* background-color: #dedede; */
+        }
+
+        .card, .card:hover {
+            display: inline-block;
+            background-color:cornsilk;
+            border: 2px solid black;
+            border-radius: 10%;
+            width: 30%;
+            text-align: center;
+            margin: 20px;
+            padding: 2%;
+            transition: 0.15s ease-out;
+        } .card:hover {
+            box-shadow: 8px 10px 8px #dedede;
+            cursor: pointer;
+        }
+
+        .card img {
+            height: 50%;
+        }
+
+        table {
+            border: 3px solid black;
+            border-collapse: collapse;
+            float: left;
+            margin: 5% 10%;
+            background-color: antiquewhite;
+        } 
+        th td {
+            font-weight: bold;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tom and Jerry Comparisons!</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>Jerry</h2>
+            <p>He is the sharing his knowledge of making name cards!</p>
+            <img src="img/jerry.png" alt="Image of Jerry Not Found :(">
+        </div>
+
+        <div class="card">
+            <h2>Tom</h2>
+            <p>Tom likes to catch jerry, but never succeeds...</p>
+            <img src="img/tom.png" alt="Image of Tom Not Found :(">
+        </div>
+    </div>
+
+    <table>
+        <th>
+            <td><strong>How smart are they?</strong></td>
+            <td><strong>How are they Comic? </strong></td>
+            <td><strong>Tactics</strong></td>
+        </th>
+        <tr>
+            <td><strong>Tom</strong></td>
+            <td>Not so much</td>
+            <td>His failures... His assurance of himself catching the mouse and not bothering to wait any longer</td>
+            <td>Uses his advantage of being a cat and small tools he can find lying around the house</td>
+        </tr>
+        <tr>
+            <td><strong>Jerry</strong></td>
+            <td>Tricks Tom a lot with tools and objects he can find</td>
+            <td>His intelligence and tricks Jerry uses to avoid being eaten even in the most dangerous circumstances</td>
+            <td>Being careless at first, but ultimately, he was able to escape and shame the cat! </td>
+        </tr>
+        <tr>
+            <td><strong>Conclusion</strong></td>
+            <td>
+                Jerry is quick and decisive at decision making, but lacks the careful plannings of tom<br>
+                However, Tom is good at planning his next attack and making moves early, like setting up traps<br>
+                Overall, Jerry comes on top because Tom cannot hold his advantage of attacking early<br>
+                This tells us that planning ahead gives an advantage, but if one celebrates too early and looses attention, 
+                then the early planning is a waste... 
+            </td>
+            <td>
+                <p>Jerry is comic at quickly finding holes where he can escape the hand of Tom</p>
+                <p>Tom is comic at planning early but ultimately failing due to his inability to carefully consider all circumstances</p>
+            </td>
+            <td>
+                <span style="color:purple;">I will let you guys fill these out... </span>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
