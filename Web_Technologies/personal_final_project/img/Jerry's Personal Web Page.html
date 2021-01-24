@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Jerry's Personal Web Page</title>
+  <link rel="stylesheet" href="Jerry's%20Personal%20Web%20Page_files/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="Jerry's%20Personal%20Web%20Page_files/styles.css">
+  <link rel="stylesheet" href="Jerry's%20Personal%20Web%20Page_files/timer.css">
+  <link rel="stylesheet" href="Jerry's%20Personal%20Web%20Page_files/intro.css">
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="banner-content">
+
+      <div class="avatar">
+        <img src="Jerry's%20Personal%20Web%20Page_files/jerry.jpg" alt="">
+      </div>
+      <h1>I am <strong>Jerry Ji</strong></h1>
+      <p>
+        Hi, I am Jerry, nice to meet you! I am a web technology ethusiast. Continue to learn more about me!
+      </p>
+
+      <!-- <button class="btn btn-outline-light btn-lg learn-more-btn">Click to Learn More! </button> -->
+
+      <div class="timer">
+        <div class="current-time-output">
+          <span id="min" class="minute">0</span>:<span id="sec" class="second">4</span>:<span id="ms" class="milis">9</span>
+        </div>
+        <div style="display: flex; justify-content: space-evenly;">
+          <button id="pause-timer" class="btn btn-primary btn-lg pause-btn">Pause</button>
+          <button id="reset-timer" class="btn btn-secondary btn-lg reset-btn">Reset</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container self-intro">
+    <h1>A bit more about me</h1>
+    <p>
+      I am a 10th grader at Maria Carrillo High School, and among the two years
+      there, I became the top programmer at the school robotics team for FRC, I am participating in the school coding
+      club, and am preparing for the AP computer science class. I also won awards in Math competitions like the AMC
+      and Mathcounts, being in the top 5% in AMC 8. During the summer time of COVID, I was enrolled in a summer
+      program to learn algorithms for big data and machine learning with a CMU professor. In my freetime, I like to
+      run and play tennis, and of course experiment with web technologies.
+    </p>
+    <p>
+      It is a great pleasure to train tomorrow's minds in the field of web development, as to let them understand what
+      is behind the Internet we use and interact hours with.
+    </p>
+  </div>
+
+  <div class="container free-time">
+    <h1 style="text-align: center;">What I like to do in my free time</h1>
+    <ul class="free-time-list">
+      <li><strong>Sports: </strong>tennis, basketball, running</li>
+      <li>Volunteering and practicing my leadership skills</li>
+      <li>Exploring various aspects of Coding and web technologies</li>
+    </ul>
+  </div>
+
+  <div style="text-align: center;" class="containter achievements">
+    <h1>My Achievements Within School</h1>
+    <div class="row main-content">
+
+      <div class="card" style="width: 18rem;">
+        <img src="Jerry's%20Personal%20Web%20Page_files/a.html" class="card-img-top" alt="Image not found">
+        <div class="card-body">
+          <h5 class="card-title">Mathematics</h5>
+          <p class="card-text">I participated in mathematical competitions like Mathcounts and the AMC while getting in
+            top 5%. </p>
+          <button class="btn btn-primary" id="achievementsLikeBtn">Like</button>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Jerry's%20Personal%20Web%20Page_files/a.html" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">School Robotics</h5>
+          <p class="card-text">I am the leading programmer for my school FRC robotics team, and participated since the
+            beginning of 9th grade. </p>
+          <button class="btn btn-primary" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Jerry's%20Personal%20Web%20Page_files/a.html" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">AP Computer Science</h5>
+          <p class="card-text">Right now, I am preparing and studying for AP CS A, and am in Honors CS principles in my
+            school.</p>
+          <button class="btn btn-primary" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row main-content">
+      <h1 style="margin-bottom: 50px;">My Experiences outside school with web technologies</h1>
+
+
+      <div class="card" style="width: 18rem;">
+        <img style="padding: 40px;" src="Jerry's%20Personal%20Web%20Page_files/flutter.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Flutter and Dart</h5>
+          <p class="card-text">As the newly emerging (released by Google in 2018) SDK for building mobile material apps,
+            along with web integration, Flutter is something I need to know for the futured.</p>
+          <button class="btn btn-primary" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Jerry's%20Personal%20Web%20Page_files/reactRedux.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">React (DOM + Native) and Redux</h5>
+          <p class="card-text">Learned and practiced React (a frontend library designed by Facebook for building user
+            interfaces) and redux (Central state management system). </p>
+          <button class="btn btn-primary" id="achievementsLikeBtn">Like</button>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img style="padding: 40px;" src="Jerry's%20Personal%20Web%20Page_files/graphql.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Express and GraphQL</h5>
+          <p class="card-text">Express and GraphQL are two main backend request-handlers which integrates well with
+            MongoDB. I need them to store data for users. </p>
+          <button class="btn btn-primary" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h1>What I aspire to</h1>
+    </div>
+  </div>
+
+  <script src="Jerry's%20Personal%20Web%20Page_files/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="Jerry's%20Personal%20Web%20Page_files/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="Jerry's%20Personal%20Web%20Page_files/bootstrap.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="Jerry's%20Personal%20Web%20Page_files/index.js"></script>
+  <script src="Jerry's%20Personal%20Web%20Page_files/timer.js"></script>
+  <script src="Jerry's%20Personal%20Web%20Page_files/likeCard.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

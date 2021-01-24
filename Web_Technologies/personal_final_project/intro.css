@@ -1,0 +1,40 @@
+.self-intro {
+  padding: 50px 20px;
+
+  font-size: 18px;
+  text-align: center;
+
+  background-color: #f5d6ba;
+}
+
+.intro-parags {
+  margin: 20px;
+  padding: 50px;
+
+  transition: 0.3s ease-out;
+}
+.intro-parags:hover {
+  background-color: #fee9e1;
+  border-radius: 5%;
+}
+
+.free-time {
+  padding: 20px;
+  background-color: #c0fdfb;
+}
+
+.free-time-list {
+  padding: 40px;
+
+  margin-top: 30px;
+  text-align: left;
+  font-size: 20px;
+  transition: 0.3s ease-out;
+}
+.free-time-list:hover {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 20px;
+
+  background-color: #d5fdfc;
+}

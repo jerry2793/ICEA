@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url("img/mountain.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+
+  height: 100vh;
+  /* position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; */
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.banner-content {
+  padding-top: 8%;
+  /* padding-bottom: 12%; */
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(211, 210, 210);
+}
+
+/* .padding-banner {
+  height: 200px;
+} */
+
+.avatar img {
+  border-radius: 45%;
+  width: 150px;
+}
+.avatar {
+  margin: auto;
+  width: 150px;
+  border-radius: 45%;
+  margin-bottom: 20px;
+}
+.avatar.wax {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.avatar img {
+  filter: brightness(1);
+  transition: 0.3s ease-out;
+}
+.avatar img:hover {
+  filter: brightness(1.33);
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.learn-more-btn {
+  margin-top: 30px;
+}

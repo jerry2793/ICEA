@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jerry's Personal Web Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="timer.css">
+  <link rel="stylesheet" href="intro.css">
+  <link rel="stylesheet" href="achievements.css">
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="banner-content">
+
+      <div class="avatar">
+        <img src="img/jerry.jpg" alt="">
+      </div>
+      <h1>I am <strong>Jerry Ji</strong></h1>
+      <p>
+        Hi, I am Jerry, nice to meet you! I am a web technology ethusiast. Continue to learn more about me!
+      </p>
+
+      <!-- <button class="btn btn-outline-light btn-lg learn-more-btn">Click to Learn More! </button> -->
+
+      <div class="timer">
+        <div class="current-time-output">
+          <span id="min" class="minute">0</span>:<span id="sec" class="second">0</span>:<span id="ms"
+            class="milis">0</span>
+        </div>
+        <div style="display: flex; justify-content: space-evenly;">
+          <button id="pause-timer" class="btn btn-primary btn-lg pause-btn">Pause</button>
+          <button id="reset-timer" class="btn btn-secondary btn-lg reset-btn">Reset</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="self-intro">
+    <h1>A bit more about me</h1>
+    <div class="content-container intro-parags">
+      <p>
+        I am a 10th grader at Maria Carrillo High School, and among the two years
+        there, I became the top programmer at the school robotics team for FRC, I am participating in the school coding
+        club, and am preparing for the AP computer science class. I also won awards in Math competitions like the AMC
+        and Mathcounts, being in the top 5% in AMC 8. During the summer time of COVID, I was enrolled in a summer
+        program to learn algorithms for big data and machine learning with a CMU professor. In my freetime, I like to
+        run and play tennis, and of course experiment with web technologies.
+      </p>
+      <p>
+        It is a great pleasure to train tomorrow's minds in the field of web development, as to give them some
+        fundemental knowledge of what is behind the Internet we use and interact hours with.
+      </p>
+    </div>
+  </div>
+
+  <div class="free-time">
+    <div class="container">
+      <h1 style="text-align: center;">What I like to do in my free time</h1>
+      <ul class="free-time-list">
+        <li><strong>Sports: </strong>tennis, basketball, running</li>
+        <li>Volunteering and practicing my leadership skills</li>
+        <li>Exploring various aspects of Coding and web technologies</li>
+        <li>Create personal projects</li>
+        <li>Solve problems around me</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="row">
+      <h1>My personal timeline with Web technologies</h1>
+    </div>
+  </div> -->
+
+  <div style="text-align: center; position: relative;" class="containter achievements">
+    <h1>My Achievement Gallery</h1>
+    <h1 class="likes-wrapper">
+      <span class="heart-emoji" id="emoji">&#10084;&#65039;</span>
+      <span id="emoji-total" class="emoji-output">0</span>
+    </h1>
+
+    <div style="text-align: left; margin-top: 100px;">
+      <h3>My Achievements Within School</h3>
+    </div>
+
+    <div class="row main-content">
+
+      <div class="card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="Image not found"> -->
+        <div class="card-body">
+          <h5 class="card-title">Mathematics</h5>
+          <p class="card-text">I participated in mathematical competitions like Mathcounts and the AMC while getting in
+            top 5%. </p>
+          <button class="btn btn-primary btn-block" id="achievementsLikeBtn">Like</button>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">School Robotics</h5>
+          <p class="card-text">I am the leading programmer for my school FRC robotics team, and participated since the
+            beginning of 9th grade. </p>
+          <button class="btn btn-primary btn-block" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">AP Computer Science</h5>
+          <p class="card-text">Right now, I am preparing and studying for AP CS A, and am in Honors CS principles in my
+            school.</p>
+          <button class="btn btn-primary btn-block" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="text-align: left; margin-top: 100px;">
+      <h3 style="margin-bottom: 50px;">My Experiences outside school with web technologies</h3>
+    </div>
+
+    <div class="row main-content">
+      <div class="card" style="width: 18rem;">
+        <img style="padding: 40px;" src="img/flutter.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Flutter and Dart</h5>
+          <p class="card-text">As the newly emerging (released by Google in 2018) SDK for building mobile material apps,
+            along with web integration, Flutter is something I need to know for the futured.</p>
+          <button class="btn btn-primary btn-block" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/reactRedux.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">React (DOM + Native) and Redux</h5>
+          <p class="card-text">Learned and practiced React (a frontend library designed by Facebook for building user
+            interfaces) and redux (Central state management system). </p>
+          <button class="btn btn-primary btn-block" id="achievementsLikeBtn">Like</button>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img style="padding: 40px;" src="img/graphql.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Express and GraphQL</h5>
+          <p class="card-text">Express and GraphQL are two main backend request-handlers which integrates well with
+            MongoDB. I need them to store data for users. </p>
+          <button class="btn btn-primary btn-block" id="achievementsLikeBtn">Like</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+  <script src="timer.js"></script>
+  <script src="likeCard.js"></script>
+</body>
+
+</html>

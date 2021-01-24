@@ -1,0 +1,21 @@
+.achievements {
+  text-align: center;
+  padding: 40px;
+  background-color: #bba0b2;
+}
+
+.main-content {
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.likes-wrapper {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  /* background-color: red; */
+  text-align: right;
+  align-items: flex-end;
+}
+.heart-emoji {
+}
